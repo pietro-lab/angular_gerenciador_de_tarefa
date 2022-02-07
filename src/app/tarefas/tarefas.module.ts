@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TarefasService } from './shared';
 import { ListarTarefasComponent } from './listar';
-import { CadastrarTarefaComponent } from './cadastrar-tarefa/cadastrar-tarefa.component';
+import { CadastrarTarefaComponent } from './cadastrar';
+import { RouterModule } from '@angular/router';
+
 
 
 
@@ -12,7 +14,8 @@ import { CadastrarTarefaComponent } from './cadastrar-tarefa/cadastrar-tarefa.co
     CadastrarTarefaComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   providers:[TarefasService]
 })
